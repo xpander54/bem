@@ -1,3 +1,74 @@
 @import 'mixin';
-@import 'style';
+/*@import 'style';*/
 
+*
+{
+    font-family: roboto;
+}
+
+.main
+{
+    @include flex_col;
+    height: 760px;
+    background: blue;
+}
+
+.banner
+{
+    display: flex;
+    background: url(../../img/meth-hero.jpg);
+    height: 600px;
+    flex-direction: column;
+    align-items: flex-end;
+    @include bg-image-full;
+    text-align: center;
+
+}
+
+.banner-h1
+{
+    
+    font-size: 1.4em;
+}
+
+.banner__info
+{
+    background: burlywood;
+    display: flex;
+    @include flex_auto;
+    height: 200px;
+    width: 50%;
+    margin: 300px auto 0 auto;
+    @include corner-20;
+    flex-direction: column;
+}
+
+.banner-info
+{
+    color: #1a7348;
+    font-family: 'Roboto', sans-serif;
+}
+
+.banner-promo
+{
+    color: white;
+    font-size: 1.1em;
+}
+
+.banner__promo
+{
+    background: green;
+    height: 120px;
+    width: 100%;
+    margin: -20px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.promo-button
+{
+    text-align: right;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
